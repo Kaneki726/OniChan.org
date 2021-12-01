@@ -1,0 +1,13 @@
+#myUL li {
+	background: purple;
+
+
+}
+#myUL li:nth-child(2n) {
+	background: #B298EE  ;
+}
+
+a {
+	text-decoration: none;
+	color: #03F6E0 ;
+}

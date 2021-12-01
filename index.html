@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Oni-Chan.org </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="shortcut icon" type="image/png" href="pictures/icon.png"/>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">	
+</head>
+<body>
+	<div class="global main">
+		<div class="top-menu navbar" >
+			<a href="index.html" id="mainPage"> главная </a>
+			<a href="#" onclick="katalog()" id="katalog"> 
+				каталог аниме 
+				<p class="genre"> подбор по жанрам </p>
+				<select onchange="changeGenre()" id="changeGenre">
+					<option value="романтика">романтика</option>
+					<option value="сёдзе">сёдзе</option>
+					<option value="драма">драмма</option>
+					<option value="приключения">Приключения</option>
+					<option value=">комедия">Комедия</option>
+					<option value="боевик">Боевик</option>
+					<option value="Фантастика">Фантастика</option>
+					<option value="фэнтези">Фэнтези</option>
+					<option value="мистика">Мистика</option>
+					<option value="детектив">Детектив</option>
+					<option value="триллер">Триллер</option>
+					<option value="сихология">Психология</option>
+				</select>
+				<p class="genre" > Год выпуска </p>
+				<select onchange="changeYear()" id="changeYear">
+					<option value="2020">2020</option>
+					<option value="2019">2019</option>
+					<option value="2018">2018</option>
+					<option value="2017">2017</option>
+					<option value="2016">2016</option>
+					<option value="2015">2015</option>
+					<option value="2014">2014</option>
+					<option value="2013">2013</option>
+					<option value="2012">2012</option>
+					<option value="2011">2011</option>
+					<option value="2000-2010">2000-2010</option>
+					<option value="1980-1999">1980-1999</option>
+
+				</select>
+			<select onchange="changeLanguage()" id="languages">
+				<option value="RU">Russia</option>
+				<option value="EN">English</option>
+			</select>
+
+			 </a>
+
+			<a href="#" onclick="newsereies()"> новые серии </a>
+			<a href="#"  onclick="navigation()"> помощь и навигация по сайту </a>
+			<a href="#"> вход и регистрация </a>
+			<a href="https://vk.com/prosto.caxar"> сообщество </a>
+		</div>
+
+		<div class="top-search">
+			<form action="/action_page.php">
+				<input onkeyup="surchBar()" id="myInput" class="search-input" type="text" placeholder="Search.." name="search">
+				<ul id="myUL" onmouseleave="hide()">
+					<li><a href="grabitel.html">grabitel</a></li>	
+					<li><a href="#">Kyoukai no Kanata</a></li>
+					<li><a href="#">Darlin in the Franxx</a></li>
+				</ul>
+
+			</form>
+		</div>
+		<div class="h1">
+			<h1 onclick="changeColor()"> Oni-Chan.org </h1>
+		</div>
+		<div class="intro" id="intro">	
+			
+		</div>
+		<div class="content">
+			<div class="intro2" id="intro2">
+				<p class="h2">рекомендации</p>
+				<div class="anime-">
+					<div>
+						<p> грабитель </p>
+						<a href="grabitel.html" target="_blank"><img src="pictures/grabitel.jpg"></a>
+					</div>
+					<div>
+						<a href="#"><p> за гранью </p></a>
+						<img src="pictures/1206_mini.jpg">
+					</div>
+					<div>
+						<a href="#"><p> серафим конца времён </p></a>
+						<img src="pictures/1428409797_056706325a13777d56174380b95490b2.jpg">
+					</div>
+				</div>
+				<div class="anime-">
+					<div>
+						<a href="#"><p>милый во франксе </p></a>
+						<img src="https://upload.wikimedia.org/wikipedia/ru/thumb/2/2b/Darling_in_the_Franxx_poster.jpg/230px-Darling_in_the_Franxx_poster.jpg">
+					</div>
+					<div>
+						<a href="#"><p> семь смертных грехов </p></a>
+						<img src="https://i.pinimg.com/originals/d7/58/91/d75891963e52194ce6ff83c2790378ad.jpg">
+					</div>
+					<div>
+						<a href="#"><p>моя геройская академия</p></a>
+						<img src="https://animevost.am/uploads/posts/2018-10/1539924030_1.jpg">
+					</div>
+				</div>
+				<div class="anime-">
+					<div>
+						<a href="#"><p> </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p>  </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p></p></a>
+						<img src="">
+					</div>
+				</div>
+				<div class="anime-">
+					<div>
+						<p>  </p>
+						<a href="" target="_blank"><img src=""></a>
+					</div>
+					<div>
+						<a href="#"><p>  </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p>  </p></a>
+						<img src="">
+					</div>
+				</div>
+				<div class="anime-">
+					<div>
+						<a href="#"><p> </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p> </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p></p></a>
+						<img src="">
+					</div>
+
+					
+				</div><div class="anime-">
+					<div>
+						<p>  </p>
+						<a href="" target="_blank"><img src=""></a>
+					</div>
+					<div>
+						<a href="#"><p> </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p>  </p></a>
+						<img src="">
+					</div>
+				</div>
+				<div class="anime-">
+					<div>
+						<a href="#"><p> </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p>  </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p></p></a>
+						<img src="">
+					</div>
+				</div>
+				<div class="anime-">
+					<div>
+						<p>  </p>
+						<a href="" target="_blank"><img src=""></a>
+					</div>
+					<div>
+						<a href="#"><p>  </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p>  </p></a>
+						<img src="">
+					</div>
+				</div>
+				<div class="anime-">
+					<div>
+						<a href="#"><p> </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p> </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p></p></a>
+						<img src="">
+					</div>
+
+					
+				</div><div class="anime-">
+					<div>
+						<p>  </p>
+						<a href="" target="_blank"><img src=""></a>
+					</div>
+					<div>
+						<a href="#"><p> </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p>  </p></a>
+						<img src="">
+					</div>
+				</div>
+				<div class="anime-">
+					<div>
+						<a href="#"><p> </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p>  </p></a>
+						<img src="">
+					</div>
+					<div>
+						<a href="#"><p></p></a>
+						<img src="">
+					</div>
+				</div>
+
+
+
+
+
+
+			</div>
+			<div class="manga" id="manga">
+
+			</div>
+		</div>
+		<div class="footer-page" id="footerPage">
+			<p>Все видео на сайте предоставлены только для ознакомления и не предполагают скачивание</p><br>
+			<a href="https://vk.com/prosto.caxar">Техническая поддержка и помощь пользователям: </a>
+
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="sort.js"></script>
+	<script type="text/javascript" src="language.js"></script>
+
+</body>
+</html>
